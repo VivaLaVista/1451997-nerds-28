@@ -11,7 +11,7 @@
   <header>
     <nav>
       <a>
-        <img src="../svg-nerds/nerds-logo.svg" width="165" height="65" alt="Логотип дизайн-студии Nёrds">
+        <img src="img/nerds-logo.svg" width="165" height="65" alt="Логотип дизайн-студии Nёrds">
       </a>
       <ul>
         <li><a href="blank.html">студия</a></li>
@@ -21,47 +21,70 @@
       </ul>
       <a href="blank.html">
         <!--предполагаю что изоб корзины это через css 0_0-->
-        <img src="../svg-nerds/cart-icon.svg" width="20" height="20" alt="Моя корзина"> корзина</a>
+        <img src="img/cart-icon.svg" width="20" height="20" alt="Моя корзина"> корзина</a>
     </nav>
   </header>
   <main>
     <h2>Магазин готовых шаблонов</h2>
-    <!--
-        <form action="#" method="#">
+
+    <h3 class="visually-hidden">Фильтр товаров</h3>
+    <section>
+        <form action="https://echo.htmlacademy.ru/" method="get">
             <fieldset>
-                <p>Сетка:</p>
-                <p><input type="radio" name="grid" value="adaptive" checked>Адаптивная</p>
-                <p><input type="radio" name="grid" value="fixed">Фиксированная</p>
-                <p><input type="radio" name="grid" value="rubber">Резиновая</p>
+              <legend>Сетка:</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+
+                <li>
+                  <input type="radio" name="grid" value="fixed" id="filter-fixed">
+                  <label for="filter-fixed">Фиксированная</label></li>
+
+                <li>
+                  <input type="radio" name="grid" value="rubber" id="filter-grid">
+                  <label for="filter-grid">Резиновая</label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset>
                 <legend>Особенности:</legend>
-                <label><input type="checkbox" name="feature" checked value="slider">Слайдер</label>
-                <label><input type="checkbox" name="feature" value="benefits block">Блок преимуществ</label>
-                <label><input type="checkbox" name="feature" checked value="news">Новости</label>
-                <label><input type="checkbox" name="feature" value="gallery">Галерея</label>
-                <label><input type="checkbox" name="feature" value="basket">Корзина</label>
+                <input type="checkbox" name="slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+
+                <input type="checkbox" name="benefits-block" id="filter-benefits-block">
+                <label for="filter-benefits-block">Блок преимуществ</label>
+
+                <input type="checkbox" name="news"  id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+
+                <input type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+
+                <input type="checkbox" name="basket" id="filter-basket">
+                <label for="filter-basket">Корзина</label>
+
             </fieldset>
-            <button type="show">Показать</button>
+            <button type="submit">Показать</button>
         </form>
-        -->
-    <section>
-      <img src="../img/img-sedona 1.jpg" width="360" height="580" alt="изображение сайта sedona">
+      <section>
+      <img src="img/img-sedona 1.jpg" width="360" height="580" alt="изображение сайта sedona">
       <p>sedona</p>
       <p>информационный сайт<br>
         для туристов</p>
       <a href="blank.html">9 900
         <!--?--></a>
-      <img src="../img/img-pink 1.jpg" width="358" height="578" alt="изображение сайта pink">
-      <img src="../img/img-barbershop 1.jpg" width="358" height="578" alt="изображение сайта barbershop">
-      <img src="../img/img-mishka 1.jpg" width="358" height="578" alt="изображение сайта mishka">
-      <img src="../img/img-aplus 1.jpg" width="358" height="578" alt="изображение сайта alpus">
-      <img src="../img/img-kvast 1.jpg" width="358" height="578" alt="изображение сайта kvast">
+      <img src="img/img-pink1.jpg" width="358" height="578" alt="изображение сайта pink">
+      <img src="img/img-barbershop1.jpg" width="358" height="578" alt="изображение сайта barbershop">
+      <img src="img/img-mishka1.jpg" width="358" height="578" alt="изображение сайта mishka">
+      <img src="img/img-aplus1.jpg" width="358" height="578" alt="изображение сайта alpus">
+      <img src="img/img-kvast1.jpg" width="358" height="578" alt="изображение сайта kvast">
     </section>
     <!--кнопки перелистывания-->
     </section>
     <a href="blank.html">
-      <img src="../img/map 1.png" width="1440" height="416" alt="изображение карты проезда">
+      <img src="img/map1.png" width="1440" height="416" alt="изображение карты проезда">
     </a>
     <section>
       <p><b>NЁRDS DESIGN STUDIO</b></p>
