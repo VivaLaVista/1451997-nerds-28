@@ -11,7 +11,7 @@
   <header>
     <nav>
       <a>
-        <img src="img/nerds-logo.svg" width="165" height="65" alt="Логотип дизайн-студии Nёrds">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nёrds">
       </a>
       <ul>
         <li><a href="blank.html">студия</a></li>
@@ -21,100 +21,157 @@
       </ul>
       <a href="blank.html">
         <!--предполагаю что изоб корзины это через css 0_0-->
-        <img src="img/cart-icon.svg" width="20" height="20" alt="Моя корзина"> корзина</a>
+        <img src="img/cart-icon.svg" width="15" height="11" alt="Моя корзина">корзина</a>
     </nav>
   </header>
   <main>
     <h2>Магазин готовых шаблонов</h2>
-
-    <h3 class="visually-hidden">Фильтр товаров</h3>
     <section>
-        <form action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset>
-              <legend>Сетка:</legend>
-              <ul>
-                <li>
-                  <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
-                  <label for="filter-adaptive">Адаптивная</label>
-                </li>
+      <h3 class="visually-hidden">Фильтр товаров</h3>
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
 
-                <li>
-                  <input type="radio" name="grid" value="fixed" id="filter-fixed">
-                  <label for="filter-fixed">Фиксированная</label></li>
+            <li>
+              <input type="radio" name="grid" value="fixed" id="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label></li>
 
-                <li>
-                  <input type="radio" name="grid" value="rubber" id="filter-grid">
-                  <label for="filter-grid">Резиновая</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-                <legend>Особенности:</legend>
-                <input type="checkbox" name="slider" id="filter-slider" checked>
-                <label for="filter-slider">Слайдер</label>
+            <li>
+              <input type="radio" name="grid" value="rubber" id="filter-grid">
+              <label for="filter-grid">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <input type="checkbox" name="slider" id="filter-slider" checked>
+          <label for="filter-slider">Слайдер</label>
 
-                <input type="checkbox" name="benefits-block" id="filter-benefits-block">
-                <label for="filter-benefits-block">Блок преимуществ</label>
+          <input type="checkbox" name="benefits-block" id="filter-benefits-block">
+          <label for="filter-benefits-block">Блок преимуществ</label>
 
-                <input type="checkbox" name="news"  id="filter-news" checked>
-                <label for="filter-news">Новости</label>
+          <input type="checkbox" name="news" id="filter-news" checked>
+          <label for="filter-news">Новости</label>
 
-                <input type="checkbox" name="gallery" id="filter-gallery">
-                <label for="filter-gallery">Галерея</label>
+          <input type="checkbox" name="gallery" id="filter-gallery">
+          <label for="filter-gallery">Галерея</label>
 
-                <input type="checkbox" name="basket" id="filter-basket">
-                <label for="filter-basket">Корзина</label>
+          <input type="checkbox" name="basket" id="filter-basket">
+          <label for="filter-basket">Корзина</label>
 
-            </fieldset>
-            <button type="submit">Показать</button>
-        </form>
-      <section>
-      <img src="img/img-sedona 1.jpg" width="360" height="580" alt="изображение сайта sedona">
-      <p>sedona</p>
-      <p>информационный сайт<br>
-        для туристов</p>
-      <a href="blank.html">9 900
-        <!--?--></a>
-      <img src="img/img-pink1.jpg" width="358" height="578" alt="изображение сайта pink">
-      <img src="img/img-barbershop1.jpg" width="358" height="578" alt="изображение сайта barbershop">
-      <img src="img/img-mishka1.jpg" width="358" height="578" alt="изображение сайта mishka">
-      <img src="img/img-aplus1.jpg" width="358" height="578" alt="изображение сайта alpus">
-      <img src="img/img-kvast1.jpg" width="358" height="578" alt="изображение сайта kvast">
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </section>
-    <!--кнопки перелистывания-->
-    </section>
-    <a href="blank.html">
-      <img src="img/map1.png" width="1440" height="416" alt="изображение карты проезда">
-    </a>
+    <div>
+      <ul>
+        <li>
+          <img src="img/img-sedona1.jpg" width="360" height="580" alt="изображение сайта sedona">
+          <div>
+            <p>sedona</p>
+            <p>информационный сайт<br>
+              для туристов</p>
+            <a href="blank.html">9 900</a>
+          </div>
+        </li>
+        <li>
+          <img src="img/img-pink1.jpg" width="358" height="578" alt="изображение сайта pink">
+          <div>
+            <p>pink</p>
+            <p>информационный сайт<br>
+              для туристов</p>
+            <a href="blank.html">9 900</a>
+          </div>
+        </li>
+        <li>
+          <img src="img/img-barbershop1.jpg" width="358" height="578" alt="изображение сайта barbershop">
+          <div>
+            <p>barbershop/p>
+            <p>информационный сайт<br>
+              для туристов</p>
+            <a href="blank.html">9 900</a>
+          </div>
+        </li>
+        <li>
+          <img src="img/img-mishka1.jpg" width="358" height="578" alt="изображение сайта mishka">
+          <div>
+            <p>mishka</p>
+            <p>информационный сайт<br>
+              для туристов</p>
+            <a href="blank.html">9 900</a>
+          </div>
+        </li>
+        <li>
+          <img src="img/img-aplus1.jpg" width="358" height="578" alt="изображение сайта alpus">
+          <div>
+            <p>alpus</p>
+            <p>информационный сайт<br>
+              для туристов</p>
+            <a href="blank.html">9 900</a>
+          </div>
+        </li>
+        <li>
+          <img src="img/img-kvast1.jpg" width="358" height="578" alt="изображение сайта kvast">
+          <div>
+            <p>kvast</p>
+            <p>информационный сайт<br>
+              для туристов</p>
+            <a href="blank.html">9 900</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <button type="button" disabled>1</button>
+      <button type="button">2</button>
+      <button type="button">3</button>
+      <button type="button">следующая</button>
+    </div>
+  </main>
+  <footer>
+    <div>
+      <a href="https://www.google.ru/maps">
+        <img src="img/map1.png" width="1440" height="416" alt="изображение карты проезда">
+      </a>
+    </div>
     <section>
+      <h3 class="visually-hidden">Контактная информация</h3>
       <p><b>NЁRDS DESIGN STUDIO</b></p>
       <p>191186, Санкт-Петербург,<br>
         ул.Б.Конюшенная, д.19/8<br>
         тел. +7(812)275-75-75</p>
       <a href="blank.html">напишите нам</a>
     </section>
-  </main>
-  <footer>
-    <section>
-
+    <div>
       <ul>
         <li>
-          <a href="#">Вконтакте</a>
+          <a href="https://vk.com/">
+            <img src="img/vk-icon.svg" width="81" height="81" alt="Логотип вконтакте">
+          </a>
         </li>
         <li>
-          <a href="#">Фейсбук</a>
+          <a href="https://ru-ru.facebook.com/">
+            <img src="img/fb-icon.svg" width="81" height="81" alt="Логотип фейсбук">
+          </a>
         </li>
         <li>
-          <a href="#">Инстаграм</a>
+          <a href="https://www.instagram.com/">
+            <img src="img/insta-icon.svg" width="81" height="81" alt="Логотип инстаграмм">
+          </a>
         </li>
       </ul>
-      <p>
-        <b>Давайте дружить,это выгодно!</b></br>
-        Скидка 10% для друзей из социальных сетей.
-      </p>
-    </section>
+    </div>
+    <p>
+      <b>Давайте дружить,это выгодно!</b>
+      <br>
+      Скидка 10% для друзей из социальных сетей.
+    </p>
   </footer>
-
 </body>
 
 </html>
