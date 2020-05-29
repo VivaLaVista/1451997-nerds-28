@@ -5,84 +5,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nerds</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!--перенести на все страницы то что в корне-->
+  <!--шрифт надо было качать 500??-->
 </head>
 
-<body>
-  <header>
-    <nav>
-      <a>
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-navigation-logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nёrds">
       </a>
-      <ul>
-        <li><a href="blank.html">студия</a></li>
-        <li><a href="blank.html">клиенты</a></li>
-        <li><a href="catalog.html">магазин</a></li>
-        <li><a href="blank.html">контакты</a></li>
-      </ul>
-      <a href="blank.html">
-        <!--предполагаю что изоб корзины это через css 0_0-->
-        <img src="img/cart-icon.svg" width="15" height="11" alt="Моя корзина">корзина</a>
+      <div class="container">
+        <ul class="site-navigation">
+          <li><a href="blank.html">Студия</a></li>
+          <li><a href="blank.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+        <div class="user-navigation">
+          <a class="basket-link" href="basket.html">Корзина</a>
+          <!--<img src="img/cart-icon.svg" width="15" height="11" alt="Моя корзина">корзина</a>-->
+        </div>
+      </div>
     </nav>
   </header>
-  <main>
-    <p><b>Долго, дорого, скрупулёзно.</b></p>
+  <main class="main-container">
+    <p>Долго, дорого, скрупулёзно.</p>
     <p>Математически выверенный дизайн <br>
       для вашего сайта или мобильного приложения.</p>
-    <a href="blank.html">узнать больше</a>
-    <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
-    <section>
+    <a class="link order" href="blank.html">узнать больше</a>
+
+    <h1 class="visually-hidden">Дизайн-студия Nёrds</h1>
+
+    <section class="service">
       <h2 class="visually-hidden">Перечень услуг</h2>
-      <ul>
-        <li>
+      <ul class="service-list">
+        <li class="service-item">
           <img src="img/illustration-1.png" width="300" height="146" alt="иллюстрация 1">
           <h3>веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a href="blank.html">заказать</a>
+          <a class="link link-order-red" href="blank.html">заказать</a>
         </li>
-        <li>
+        <li class="service-item">
           <img src="img/illustration-2.png" width="300" height="146" alt="иллюстрация 2">
           <h3>приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="blank.html">заказать</a>
+          <a class="link link-order-green" href="blank.html">заказать</a>
         </li>
-        <li>
+        <li class="service-item">
           <img src="img/illustration-3.png" width="300" height="146" alt="иллюстрация 3">
           <h3>презентации</h3>
           <p>Вы даже не подозреваете насколько вы изумительны!</p>
-          <a href="blank.html">заказать</a>
+          <a class="link link-order-yellow"  href="blank.html">заказать</a>
         </li>
       </ul>
     </section>
-    <section>
-      <h2>О нас</h2>
-      <p>
-        Мы - маленькая, но гордая<br>
-        дизайн-студия из Краснодара.
-      </p>
-      <p>
-        Исповедуем принципы минимализма и чистоты.Ставим математичекий расчёт<br>
-        превыше креатива.Работаем не покладая рук, как роботы.
-      </p>
-      <p>выполняем зказы на разработку:</p>
-      <ul>
-        <li>Веб-сайтов любой сложности</li>
-        <li>Мобильных приложнений для IOS и Android</li>
-        <li>Слайдшоу и видео для корпоративных презентаций</li>
-      </ul>
-      <div>
-        <img src="img/nerds-illustration1.png" width="360" height="208" alt="Изображение логотипа дизайн-студии Nёrds">
-        <p>с 2004 года любим точность во всём:</p>
-      </div>
-      <dl>
+    <section class="about-us">
+    <div class="about-us-text">
+              <h2 class="visually-hidden">О нас</h2>
+        <p class="city">
+          Мы - маленькая, но гордая<br>
+          дизайн-студия из Краснодара.
+        </p>
+        <p class="slogan">
+          Исповедуем принципы минимализма и чистоты.Ставим математичекий расчёт<br>
+          превыше креатива.Работаем не покладая рук, как роботы.
+        </p>
+        <p class="orders">выполняем заказы на разработку:</p>
+        <ul class="orders-list">
+          <li class="orders-items">Веб-сайтов любой сложности</li>
+          <li class="orders-items">Мобильных приложнений для IOS и Android</li>
+          <li class="orders-items">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+    </div>
+    <div class="about-us-numbers">
+      <img src="img/nerds-illustration1.png" width="360" height="208" alt="Изображение логотипа дизайн-студии Nёrds">
+      <p>с 2004 года любим точность во всём:</p>
+      <dl class="list-result">
         <dt>146 <sup>%</sup></dt>
-        <dd>Уровень самоотдачи</dd>
+        <dd>Уровень<br> самоотдачи</dd>
         <dt>100<sup>%</sup></dt>
-        <dd>Соблюдение сроков</dd>
+        <dd>Соблюдение<br> сроков</dd>
         <dt>50<sup>%</sup></dt>
-        <dd>Минимальная предоплата</dd>
+        <dd>Минимальная<br> предоплата</dd>
       </dl>
+    </div>
     </section>
-    <section>
+    <section class="logos">
       <h2 class="visually-hidden">Список логотипов компаний сотрудничающих с Nёрдс</h2>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/group5.svg" width="199" height="67" alt="Логотип Html academy">
@@ -110,7 +122,7 @@
       <p>191186, Санкт-Петербург,<br>
         ул.Б.Конюшенная, д.19/8<br>
         тел. +7(812)275-75-75</p>
-      <a href="blank.html">напишите нам</a>
+      <a class="link" href="blank.html">напишите нам</a>
     </section>
 
     <!--форма для отправки письма-->
@@ -128,12 +140,13 @@
         <p>Текст письма:</p>
         <textarea name="mail" id="text" rows="10">В свободной форме</textarea>
         <br>
-        <button type="submit">отправить</button>
+        <button class="link" type="submit">отправить</button>
       </form>
       <button type="submit">закрыть</button>
     </section>
-    <div>
-      <ul>
+
+    <div class="social-network">
+      <ul class="social-list">
         <li>
           <a href="https://vk.com/">
             <img src="img/vk-icon.svg" width="81" height="81" alt="Логотип вконтакте">
@@ -151,11 +164,10 @@
         </li>
       </ul>
     </div>
-    <p>
-      <b>Давайте дружить,это выгодно!</b>
-      <br>
-      Скидка 10% для друзей из социальных сетей.
-    </p>
+    <p class="benefit">Давайте дружить,это выгодно!</p>
+
+    <p class="friends">Скидка 10% для друзей из социальных сетей.</p>
+
   </footer>
 </body>
 

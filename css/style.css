@@ -1,0 +1,236 @@
+:root{
+  --background-gray:#EEEEEE; /*цвет фона серый в шапке*/
+  --background-dark:#000000; /*цвет шрифта*/
+  --background-light-red:#FB565A; /*цвет кнопки веб сайт, булиты*/
+  --background-light-green:#00CA74; /*цвет  кнопки приложения, ползунка в стоимости*/
+  --background-very-light-yellow:#EFC849; /*цвет кнопки презентации*/
+  --background-white:#FFFFFF;/*цвет фона в иконках соц сетей*/
+  --background-red:#E74246; /*цвет кнопки при наведении*/
+  --background-extra-red:#D7373B;/*цвет кнопки при нажатии */
+  --background-green:#00BC6C; /*цвет копки при наведении*/
+  --background-extra-green:#00AA62;/*цвет кнопки при нажатии*/
+  --background-light-yellow:#EFC84A;/*цвет кнопки при покое*/
+  --background-yellow:#EAB534;/*цвет кнопки при наведении*/
+  --background-yellow:#EAB534;/*цвет кнопки при наведении*/
+  --background-extra-yellow:#E5A722;/*цвет кнопки при нажатии*/
+  --background-basic-gray:#888888;/*цвет основного фона*/
+  --background-extra-gray:#D7DCDE; /*цвет попапа*/
+  --background-light-dark: #283136; /*цвет шрифта основного */
+  --background-light-light-dark:#444444;
+}
+body{
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: var(--background-light-dark) ;                                                /* указать цвет ТЕКСТА*/
+  text-transform: none;
+  background-color:var( --background-basic-gray) ;                                    /* указать цвет для фона если текст не загрузился*/
+  background-image:url("../img/bg.jpg");/* указать адрес фФОНА!!??*/
+  background-position: top center;
+  background-repeat: no-repeat ;
+}
+a{
+text-decoration: none;
+}
+
+img{
+  max-width: 100%;                                                                      /*свойство, которое не позволяет картинкам быть больше родителя*/
+  height: auto;                                                                         /* пропорциии картинки автоматическая */
+}
+/*.main-navigation*/
+.main-navigation{
+  font-size: 16px;
+  line-height: 30px;
+  background-color:transparent;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+
+}
+.site-navigation{
+  list-style: none;
+}
+/*user navigation*/
+  .main-navigation a,
+  .site-navigation a{
+ color:var( --background-light-dark);/*почему нельзя указать только main-navigation*/
+}
+/*состояния*/
+
+.main-navigation-logo a:hover{
+color:var( --background-dark);
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover{
+color:var(--background-light-red);
+}
+
+.site-navigation a:active,
+.user-navigation a:active{
+color: rgba(0,0,0,.3);
+}
+
+.main-navigation-logo a:active{ /*думаю это не работает так как вставка картинкой*/
+  color: #A6A6A6;
+}
+/*подключила фокус и актив отключился!*/
+.site-navigation a:focus,
+.user-navigation a:focus{
+color:var(--background-dark);
+text-decoration: underline;/*не работает нижнее подчёркивание*/
+text-decoration-color: var(--background-light-red);/*как сделатт нижнее красное подчёркивание при фокусе?*/
+}
+
+/*фич лист */
+.service-list{
+  list-style: none;
+}
+
+.service-item{
+  text-align: center;
+}
+.service-item h3{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color:var(--background-dark);
+  text-transform: uppercase;
+}
+.service-item p{
+  font-style: normal;
+  font-weight: normal;
+  align-items: center;
+
+}
+/*ссылки"заказать!"*/
+.link{
+ font: inherit;
+ text-align: center;
+ text-transform: uppercase;
+ text-align: center;
+ border-radius: 3px;
+ font-weight: 500;
+ line-height: 18px;
+ color:var(--background-white);
+ border-radius: 3px;
+ padding: 17px 40px 15px 39px;
+
+
+}
+.link-order-red{
+  background-color: var(--background-light-red);
+}
+.link-order-green{
+  background-color: var(--background-light-green);
+}
+.link-order-yellow{
+  background-color: var(--background-light-yellow);
+}
+.link-order-red:hover{
+  background-color: var(--background-red);
+}
+
+.link-order-green:hover{
+  background-color: var(--background-green);
+}
+.link-order-yellow:hover{
+  background-color: var(--background-yellow);
+}
+
+.link-order-red:active{
+  background-color: var(--background-extra-red);
+  color: rgba(255, 255, 255,.3);
+}
+
+.link-order-green:active{
+  background-color: var(--background-extra-green);
+  color: rgba(255, 255, 255,.3);
+}
+.link-order-yellow:active{
+  background-color: var(--background-extra-yellow);
+  color: rgba(255, 255, 255,.3);
+}
+
+
+.about-us-text{
+  text-align: left;
+}
+.city{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  align-items: center;
+  color:var(--background-dark);
+}
+.slogan{
+ align-items: center;
+  font-style: normal;
+}
+.orders{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: normal;
+}
+.orders-items{
+  font-style: normal;
+  font-weight: normal;
+}
+.about-us-numbers{
+  text-align: right;
+}
+
+.about-us-numbers img{
+  background:var(--background-basic-gray);
+}
+.about-us-numbers p{
+  font-weight: bold;
+  align-items: center;
+  text-transform: uppercase;
+  color:var( --background-dark)
+}
+.list-result>dd{
+  line-height: 18px;
+  align-items: center;
+}
+.list-result>dt{
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+dt>dl{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+  color:var( --background-dark)
+}
+dt>sup{
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
+  color:var( --background-dark)
+}
+
+.social-list{
+  list-style: none;
+}
+.benefit{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color:var(--background-dark);
+}
+.friends{
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+  color:var(--background-light-light-dark);
+}
