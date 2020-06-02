@@ -1,37 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>catalog</title>
+  <title>Nerds</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style1.css" rel="stylesheet">
+  <!--перенести на все страницы то что в корне-->
+  <!--шрифт надо было качать 500??-->
 </head>
 
-<body>
-  <header>
-    <nav>
-      <a>
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-navigation-logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nёrds">
       </a>
-      <ul>
-        <li><a href="blank.html">студия</a></li>
-        <li><a href="blank.html">клиенты</a></li>
-        <li><a href="catalog.html">магазин</a></li>
-        <li><a href="blank.html">контакты</a></li>
-      </ul>
-      <a href="blank.html">
-        <!--предполагаю что изоб корзины это через css 0_0-->
-        <img src="img/cart-icon.svg" width="15" height="11" alt="Моя корзина">корзина</a>
+      <div class="main-navigation-wrapper">
+        <div class="container">
+          <ul class="site-navigation">
+            <li><a href="blank.html">Студия</a></li>
+            <li><a href="blank.html">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="blank.html">Контакты</a></li>
+          </ul>
+          <div class="user-navigation">
+            <a class="basket-link" href="basket.html">Корзина</a>
+            <!--<img src="img/cart-icon.svg" width="15" height="11" alt="Моя корзина">корзина</a>-->
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
   <main>
-    <h2>Магазин готовых шаблонов</h2>
-    <section>
+    <h2 class="shop">Магазин готовых шаблонов</h2>
+    <section class="filter">
       <h3 class="visually-hidden">Фильтр товаров</h3>
       <form action="https://echo.htmlacademy.ru/" method="get">
         <fieldset>
-          <legend>Сетка:</legend>
-          <ul>
+          <legend class="grid">Сетка:</legend>
+          <ul class="filter-list">
             <li>
               <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
@@ -48,107 +59,102 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Особенности:</legend>
-          <input type="checkbox" name="slider" id="filter-slider" checked>
-          <label for="filter-slider">Слайдер</label>
+          <legend class="features">Особенности:</legend>
+          <p><input type="checkbox" name="slider" id="filter-slider" checked>
+            <label for="filter-slider">Слайдер</label></p>
 
-          <input type="checkbox" name="benefits-block" id="filter-benefits-block">
-          <label for="filter-benefits-block">Блок преимуществ</label>
+          <p><input type="checkbox" name="benefits-block" id="filter-benefits-block">
+            <label for="filter-benefits-block">Блок преимуществ</label></p>
 
-          <input type="checkbox" name="news" id="filter-news" checked>
-          <label for="filter-news">Новости</label>
+          <p><input type="checkbox" name="news" id="filter-news" checked>
+            <label for="filter-news">Новости</label></p>
 
-          <input type="checkbox" name="gallery" id="filter-gallery">
-          <label for="filter-gallery">Галерея</label>
+          <p><input type="checkbox" name="gallery" id="filter-gallery">
+            <label for="filter-gallery">Галерея</label></p>
 
-          <input type="checkbox" name="basket" id="filter-basket">
-          <label for="filter-basket">Корзина</label>
+          <p><input type="checkbox" name="basket" id="filter-basket">
+            <label for="filter-basket">Корзина</label></p>
 
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="link button" type="submit">Показать</button>
       </form>
     </section>
     <div>
-      <ul>
+      <ul class="list-of-sites">
         <li>
           <img src="img/img-sedona1.jpg" width="360" height="580" alt="изображение сайта sedona">
           <div>
-            <p>sedona</p>
-            <p>информационный сайт<br>
-              для туристов</p>
-            <a href="blank.html">9 900</a>
+            <p class="name-site">sedona</p>
+            <p>информационный сайт<br>для туристов</p>
+            <a class="link price" href="blank.html">9 900 ₽</a>
           </div>
         </li>
         <li>
           <img src="img/img-pink1.jpg" width="358" height="578" alt="изображение сайта pink">
           <div>
-            <p>pink</p>
-            <p>информационный сайт<br>
-              для туристов</p>
-            <a href="blank.html">9 900</a>
+            <p class="name-site">pink app</p>
+            <p>Продуктовый лендинг <br>приложения для iOS и Android</p>
+            <a class="link price" href="blank.html">9 900 ₽</a>
           </div>
         </li>
         <li>
           <img src="img/img-barbershop1.jpg" width="358" height="578" alt="изображение сайта barbershop">
           <div>
-            <p>barbershop/p>
-            <p>информационный сайт<br>
-              для туристов</p>
-            <a href="blank.html">9 900</a>
+            <p class="name-site">Barbershop</p>
+            <p>Сайт салона красоты.<br>Для мужчин, да.</p>
+            <a class="link " href="blank.html">9 900 ₽</a>
           </div>
         </li>
         <li>
           <img src="img/img-mishka1.jpg" width="358" height="578" alt="изображение сайта mishka">
           <div>
-            <p>mishka</p>
-            <p>информационный сайт<br>
-              для туристов</p>
-            <a href="blank.html">9 900</a>
+            <p class="name-site">mishka</p>
+            <p>Интернет-магазин<br>вязаных игрушек</p>
+            <a class="link price" href="blank.html">9 900 ₽</a>
           </div>
         </li>
         <li>
           <img src="img/img-aplus1.jpg" width="358" height="578" alt="изображение сайта alpus">
           <div>
-            <p>alpus</p>
-            <p>информационный сайт<br>
-              для туристов</p>
-            <a href="blank.html">9 900</a>
+            <p class="name-site">A Plus</p>
+            <p>Лендинг курсов повышения<br> квалификации</p>
+            <a class="link price" href="blank.html">9 900 ₽</a>
           </div>
         </li>
         <li>
           <img src="img/img-kvast1.jpg" width="358" height="578" alt="изображение сайта kvast">
           <div>
-            <p>kvast</p>
-            <p>информационный сайт<br>
-              для туристов</p>
-            <a href="blank.html">9 900</a>
+            <p class="name-site">КВАСТ</p>
+            <p>Промо-сайт производителя<br>крафтового кваса</p>
+            <a class="link price" href="blank.html">9 900 ₽</a>
           </div>
         </li>
       </ul>
     </div>
     <div>
-      <button type="button" disabled>1</button>
-      <button type="button">2</button>
-      <button type="button">3</button>
-      <button type="button">следующая</button>
+      <button class="button" type="button" disabled>1</button>
+      <button class="button" type="button">2</button>
+      <button class="button" type="button">3</button>
+      <button class="button" type="button">следующая</button>
     </div>
   </main>
-  <footer>
-    <div>
-      <a href="https://www.google.ru/maps">
+  <footer class="page-footer">
+    <div class="map">
+      <a class="maps-item" href="https://www.google.ru/maps">
         <img src="img/map1.png" width="1440" height="416" alt="изображение карты проезда">
       </a>
     </div>
-    <section>
+    <section class="contacts">
       <h3 class="visually-hidden">Контактная информация</h3>
-      <p><b>NЁRDS DESIGN STUDIO</b></p>
-      <p>191186, Санкт-Петербург,<br>
+      <p class="name">NЁRDS DESIGN STUDIO</p>
+      <p class="address">191186, Санкт-Петербург,<br>
         ул.Б.Конюшенная, д.19/8<br>
         тел. +7(812)275-75-75</p>
-      <a href="blank.html">напишите нам</a>
+      <a class="link contacts-link" href="blank.html">напишите нам</a>
     </section>
-    <div>
-      <ul>
+
+    <div class="social-network">
+      <ul class="social-list">
         <li>
           <a href="https://vk.com/">
             <img src="img/vk-icon.svg" width="81" height="81" alt="Логотип вконтакте">
@@ -166,11 +172,11 @@
         </li>
       </ul>
     </div>
-    <p>
-      <b>Давайте дружить,это выгодно!</b>
-      <br>
-      Скидка 10% для друзей из социальных сетей.
-    </p>
+    <div class="end">
+      <p class="benefit">Давайте дружить,это выгодно!</p>
+
+      <p class="friends">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </footer>
 </body>
 
